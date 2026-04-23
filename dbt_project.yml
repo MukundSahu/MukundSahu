@@ -40,6 +40,6 @@ models:
     # Applies to all files under models/example/
     Marts:
       +materialized: table
-    Staging:
+    staging:
       +materialized: view
 
