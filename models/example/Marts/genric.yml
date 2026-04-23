@@ -1,0 +1,17 @@
+version: 2
+models: 
+  - name: order_items
+    description: 'NA1'
+    columns: 
+      - name: order_key
+        description: "Foreign key for orders table"
+        tests: 
+          - not null
+      - name: line_number
+        description: "The specific line item within order"
+        tests: 
+          - not null
+      - name: item_discount_number
+        description: "Calculated using macro"
+        tests:
+          - not null
