@@ -6,12 +6,12 @@ models:
       - name: order_key
         description: "Foreign key for orders table"
         tests: 
-          - not null
+          - not_null
       - name: line_number
         description: "The specific line item within order"
         tests: 
-          - not null
+          - not_null
       - name: item_discount_number
         description: "Calculated using macro"
         tests:
-          - not null
+          - not_null
