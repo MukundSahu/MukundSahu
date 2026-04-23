@@ -3,7 +3,7 @@ select
     line_item.line_number,
     line_item.extended_price,
     orders.order_key,
-    orders.customer_key,
+    orders.cust_key,
     orders.order_date,
     {{ discounted_amt(
         'line_item.extended_price',
